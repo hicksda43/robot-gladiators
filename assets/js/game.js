@@ -10,7 +10,10 @@ var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 var enemyHealth = 50;
 var enemyAttack = 12;
 
-
+console.log(enemyNames);
+console.log(enemyNames.length);
+console.log(enemyNames[0]);
+console.log(enemyNames[3]);
 
 var fight = function(enemyName) {    
     while(playerHealth > 0 && enemyHealth > 0) {
@@ -82,8 +85,9 @@ for(var i = 0; i < enemyNames.length; i++) {
         // debugger;
 
         // pass the pickedEnemyName variable's value into the fight function, where it will assume the value of the enemy name parameter
-        fight(pickedEnemyName)
+        fight(pickedEnemyName);
     } 
+    // if player isn't alive, stop the game
     else {
         window.alert("You have lost your robot in battle! Game Over!");
         break;
